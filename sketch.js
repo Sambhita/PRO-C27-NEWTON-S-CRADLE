@@ -53,10 +53,10 @@ function draw() {
   string5.display();
 
   drawSprites();
-  Force();
+  keyPressed();
 }
 
-function Force() {
+function keyPressed() {
   if (keyCode === UP_ARROW) {
     Matter.Body.applyForce(bob1.body, bob1.body.position, {
       x: -1000,
